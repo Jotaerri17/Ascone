@@ -11,7 +11,7 @@ export default function Home() {
 
   return(
     <>
-      <header className='bg-gradient-to-r from-gray-50 to-gray-300'>
+      <header className=' bg-gray-400 shadow-2xl shadow-black'>
              
         
         <nav className=' flex  justify-between items-center py-6 mx-10'>
@@ -31,21 +31,21 @@ export default function Home() {
           </div>
           
         </nav>
-      <div className="w-full h-0.5 bg-black ">l</div>
+      
 
         
     
-    <div className="flex flex-col md:flex-row min-h-screen bg-gradient-to-r from-gray-50 to-gray-300 p-8">
+    <div className="flex flex-col md:flex-row min-h-screen bg-slate-500 p-8">
       
       
       <div className="flex-1 flex flex-col justify-center p-10  ">
-        <h1 className="text-6xl font-semibold italic">Mude a forma 
+        <h1 className="text-6xl text-gray-900 font-extrabold italic">Mude a forma 
           como você usa
            seu dinheiro</h1>
         <p className="mt-4 text-sm  text-gray-600 italic">
           Simplifique sua vida financeira com nosso aplicativo.
         </p>
-        <button className="mt-8  cursor-pointer bg-green-900 text-white py-3 px-6 border-2 rounded-lg  font-semibold self-start  hover:bg-green-700 duration-150">
+        <button className="mt-8  cursor-pointer border-green-900 bg-green-900 text-white py-3 px-6 border-2 rounded-lg  font-semibold self-start  hover:bg-green-700  hover:border-green-700 duration-150">
           Comece Agora
         </button>
       </div>
@@ -53,11 +53,12 @@ export default function Home() {
       
       <div className="flex-1 p-4 flex items-center justify-center">
        
-        <div className="  relative bg-gradient-to-r from-gray-100 to-gray-200 border-gray-300 rounded-2xl w-full  h-96 flex items-center justify-center text-gray-400">
+        <div className="  relative bg-gray-300 mx-2 border-gray-300 rounded-2xl w-full  h-96 flex items-center justify-center text-gray-400">
           <Image
             src="/Asconeimg.png"
             alt="Descrição da imagem"
-            fill   // faz a imagem ocupar todo o espaço da div
+            width={600}
+            height={700}  // fill faz a imagem ocupar todo o espaço da div
             className="object-contain rounded-lg"
           />
         </div>
@@ -67,13 +68,13 @@ export default function Home() {
 
       </header>
         
-      <div className='flex flex-col  bg-gradient-to-r from-gray-50 to-gray-300 h-[400px] w-full'>
+      <div className='flex flex-col bg-slate-500 h-[400px] w-full'>
 
         <h1 className='flex   items-center gap-4 justify-center font-bold text-3xl'><DollarSign size={35} strokeWidth={3} className='text-green-900' />Vantagens da Ascone<DollarSign size={35} strokeWidth={3}  className='text-green-900' /></h1>
 
         <div className='flex  justify-around  h-[300px] '>
 
-          <div className='flex flex-col mt-12 w-sm items-center border-2 rounded-3xl  bg-gradient-to-br from-gray-100 to-gray-500'>
+          <div className='flex flex-col mt-12 w-sm items-center border-2 rounded-3xl  bg-gradient-to-b from-gray-300 to-gray-500'>
 
             
             <h1 className=' flex   items-center gap-2 font-bold mt-4'><CreditCard  size={20} strokeWidth={3} className='text-green-900' />Vantagens do Cartão</h1>
@@ -87,7 +88,7 @@ export default function Home() {
 
 
 
-          <div className='flex flex-col mt-12 items-center w-sm  border-2 rounded-2xl  bg-gradient-to-br from-gray-100 to-gray-500'>
+          <div className='flex flex-col mt-12 items-center w-sm  border-2 rounded-2xl  bg-gradient-to-b from-gray-300 to-gray-500'>
             <h1 className='flex   items-center gap-2 font-bold mt-4'><CircleDollarSign  size={20}  strokeWidth={3} className='text-green-900' />Vantagens Financeiras</h1>
             <ul className=' list-disc flex flex-col mt-8  font-semibold gap-4'>
               <li>Rendimento automático do seu dinheiro</li>
@@ -98,7 +99,7 @@ export default function Home() {
 
 
 
-          <div className='flex flex-col mt-12 items-center w-sm border-2 rounded-2xl  bg-gradient-to-br from-gray-100 to-gray-500'>
+          <div className='flex flex-col mt-12 items-center w-sm border-2 rounded-2xl  bg-gradient-to-b from-gray-300 to-gray-500'>
             <h1 className=' flex items-center gap-2 font-bold mt-4'><Landmark  size={20}  strokeWidth={3} className='text-green-900' />Estilo de Vida</h1>
             <ul className=' list-disc flex flex-col mt-8  font-semibold gap-4'>
               <li>Seu banco em qualquer lugar do mundo</li>
